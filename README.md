@@ -4,7 +4,7 @@ This project is an application skeleton for an [AngularJS](http://angularjs.org/
 on [angular-seed](https://github.com/angular/angular-seed)
 
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools and also uses [GruntJS](http://gruntjs.com//)
+framework and a bunch of development and testing tools. It also uses [GruntJS](http://gruntjs.com//)
 to:
 * load properties file for different environment;
 * copy dependecies from bower_components to lib folder;
@@ -33,6 +33,28 @@ folders in your project.
 
 * `node_modules` - contains the npm packages for the tools we need
 * `bower_components` - contains the angular framework files
+
+## Build application
+Properties for local build are in app/environment/development.json. Build with local environment properties with:
+
+```
+grunt development
+```
+
+Properties for staging build are in flp/environment/development.json. Build with staging environment properties with:
+
+```
+grunt staging
+```
+
+Properties for production build are in flp/environment/development.json. Build with production environment properties with:
+
+```
+grunt production
+```
+
+Each of these task above, also copy dependecies in lib folder.
+
 
 ### Run the Application
 
